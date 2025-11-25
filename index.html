@@ -26,16 +26,28 @@
         <div class="container">
             <h2>Verificador de Palíndromo</h2>
 
-            <form onsubmit="verificar(); return false;">
-                <input id="texto" type="text" placeholder="Digite uma palavra">
+            <div class="input-area">
+                <input id="texto" type="text" placeholder="Digite uma palavra ou frase..." autocomplete="off">
 
-                <button type="submit">Verificar</button>
-            </form>
+                <button id="btnLimpar" class="limpar">✖</button>
+            </div>
 
-            <p id="resultado" class="resultado"></p>
-        </div>
+            <button id="btnVerificar" class="verificar">Verificar</button>
+
+            <p id="mensagem" class="mensagem"></p>
+
+            <div id="detalhes" class="detalhes hidden">
+                <p><strong>Texto original:</strong> <span id="original"></span></p>
+                <p><strong>Texto processado:</strong> <span id="processado"></span></p>
+                <p><strong>Invertido:</strong> <span id="invertido"></span></p>
+                <p><strong>Tamanho:</strong> <span id="tamanho"></span> caracteres</p>
 
     </main>
+
+    <footer class="footer">
+        Desenvolvido por <strong>Nayara Kiyota</strong> 💜 2025
+    </footer>
+
 
     <script src="./assets/js/scripts.js"></script>
 </body>
